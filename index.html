@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>92 Logics prototype · San Diego County AI report writing</title>
+  <meta name="description" content="Scripted prototype by 92 Logics of a labeled report-writing assistant for San Diego County BuyNet RFP BPM013365. Not an official county system and not a bid.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the assistant</a>
+  <div class="banner" role="note">
+    <strong>92 Logics prototype.</strong>
+    Not an official County of San Diego system, not connected to Probation records, and not a bid or proposal.
+  </div>
+
+  <header class="top">
+    <div class="brand">
+      <span class="mark" aria-hidden="true">92</span>
+      <div>
+        <p class="eyebrow">92 Logics · Islamabad · <a href="https://www.92logics.com">92logics.com</a> · scripted demo</p>
+        <h1>San Diego County AI report writing</h1>
+      </div>
+    </div>
+    <p class="lede">A labeled sample of the report-preparation work described on the public pages for BuyNet RFP BPM013365: extract, summarize, and draft, then stop for a person. Every reply is scripted from those pages. Questions and tasks the notice does not cover are refused. Nothing here is a probation report.</p>
+  </header>
+
+  <div class="shell">
+    <aside class="rail" aria-label="Placeholder source packet">
+      <h2>Placeholder packet</h2>
+      <p class="fine">Fictional lines for the sample buttons only. Not County data. Every name, date, and number below is a placeholder.</p>
+      <article class="source">
+        <h3>Police report <span>placeholder</span></h3>
+        <p>Report no. <strong>PLACEHOLDER-PR-000</strong>. Date <strong>PLACEHOLDER-DATE-A</strong>. Subject <strong>Example Person A</strong> (placeholder name). One sentence only: a sample officer contacted the subject at <strong>PLACEHOLDER-ADDRESS</strong>. No incident detail is included.</p>
+      </article>
+      <article class="source">
+        <h3>Case note <span>placeholder</span></h3>
+        <p>Note no. <strong>PLACEHOLDER-CN-000</strong>. Date <strong>PLACEHOLDER-DATE-B</strong> (different label on purpose). Subject <strong>Example Person A</strong>. Office contact recorded. Outcome field left <strong>blank</strong> on purpose.</p>
+      </article>
+      <article class="source">
+        <h3>Transcript <span>placeholder</span></h3>
+        <p>Clip <strong>PLACEHOLDER-TR-000</strong>. Speaker 1 (placeholder): “This is a sample line, not a real statement.” No further dialogue.</p>
+      </article>
+      <p class="fine">This desk will not read text you paste, and it will not draft from any packet other than these three placeholders.</p>
+    </aside>
+
+    <main id="main">
+      <section aria-label="Scripted report-writing assistant">
+        <div class="stage-bar">
+          <div>
+            <p class="kicker">Report-writing assistant</p>
+            <p class="name">Extract · summarize · draft · flag gaps · human review</p>
+          </div>
+          <p class="status">Offline · scripted</p>
+        </div>
+        <p class="rail-label" id="chip-label">Try a scripted prompt</p>
+        <div class="chips" id="chips"></div>
+        <div class="thread" id="thread" aria-live="polite"></div>
+        <form id="composer" class="composer">
+          <label class="sr" for="ask">Ask the prototype</label>
+          <textarea id="ask" rows="2" placeholder="Ask what the public notice covers, or use a sample prompt. Pasted case facts are refused."></textarea>
+          <button type="submit">Answer from notice</button>
+        </form>
+        <p class="fine composer-note">Runs in this browser only. No account, no API key, no live AI service, no County system.</p>
+      </section>
+    </main>
+
+    <aside class="facts" aria-label="Public notice facts">
+      <h2>Public notice</h2>
+      <dl>
+        <div><dt>Buyer</dt><dd>San Diego County — Purchasing and Contracting</dd></div>
+        <div><dt>Using department</dt><dd>Department of Probation</dd></div>
+        <div><dt>RFx</dt><dd>BPM013365</dd></div>
+        <div><dt>Title</dt><dd>RFP — Artificial Intelligence (AI) Report Writing Services</dd></div>
+        <div><dt>Portal</dt><dd><a href="https://sdbuynet.sandiegocounty.gov/">sdbuynet.sandiegocounty.gov</a></dd></div>
+        <div><dt>Listed deadline</dt><dd>16 October 2026, 3:00 PM on the BuyNet public list</dd></div>
+        <div><dt>Contact</dt><dd>Vanessa Rios<br>VanessaC.Rios@sdcounty.ca.gov</dd></div>
+        <div><dt>Status when checked</dt><dd>Open on the BuyNet public list (3 October 2026)</dd></div>
+      </dl>
+      <h2>Scope this demo will discuss</h2>
+      <ul>
+        <li>Design, deliver, and maintain an AI-enabled solution for Probation report preparation</li>
+        <li>Data extraction, summarization, and drafting</li>
+        <li>Human judgment stays in place</li>
+        <li>County oversight, security, and privacy requirements (no control list is published on the pages used here)</li>
+      </ul>
+      <h2>This desk will not</h2>
+      <ul>
+        <li>Call a live AI API or any County system</li>
+        <li>Treat a sample figure as Probation data</li>
+        <li>Finalize, file, or score a report</li>
+        <li>Draft a bid or quote a price</li>
+        <li>Invent controls, systems, or statistics the public pages do not state</li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer class="site">
+    Prototype by 92 Logics · cowork@92logics.com · not an official county system.
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
